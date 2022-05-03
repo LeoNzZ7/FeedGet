@@ -1,0 +1,53 @@
+import { useState } from "react";
+import bugImageUrl from '../../assets/bug.svg';
+import ideaImageUrl from '../../assets/idea.svg';
+import thoughtImageUrl from '../../assets/thought.svg';
+import { FeedBackTypeStep } from "./steps/FeedbackType";
+import { FeedbackContentStep } from "./steps/feedbackContent";
+
+export const feedbackTypes = {
+    BUG: {
+        title: 'Problema',
+        image: {
+            source: bugImageUrl,
+            alt: 'Imagem de um inseto'
+        }
+    },
+    IDEA: {
+        title: 'Ideia',
+        image: {
+            source: ideaImageUrl,
+            alt: 'Imagem de um Lâmpada'
+        }
+    },
+    OTHER: {
+        title: 'Outro',
+        image: {
+            source: thoughtImageUrl,
+            alt: 'Imagem de uum balão de pensamento'
+        }
+    }
+} 
+
+export type FeedbackType = keyof typeof feedbackTypes;
+
+export const WidgetForm  =  () => {
+    const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null);
+
+    const HandleRestartFeedback = () => {
+        setFeedbackType(null);
+    }
+
+    return (
+        <div className="bg-zinc-900 p-4 rounded-2xl relative mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)]  md:w-auto">
+            {!feedbackType &&
+                <FeedBackTypeStep onfeedbackChanged={setFeedbackType}/>
+            } {feedbackType &&
+                <FeedbackContentStep onFeedbackRestart={HandleRestartFeedback} feedbackType={feedbackType}/>
+            }
+            <footer className="text-xs text-neutral-400" >
+                Feito com 🤍 pela <a className="underline underline-offset-2 " href="https://rocketseat.com.br" target='_blank' >Rockseat</a>
+            </footer>
+        </div>
+    );
+}

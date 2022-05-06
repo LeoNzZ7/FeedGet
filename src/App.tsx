@@ -2,7 +2,7 @@ import { Widget } from "./components/widget"
 
 const App = () => {
   return (
-    <div>
+    <div> 
       <Widget/>
     </div>
   )

@@ -32,7 +32,6 @@ export const FeedbackContentStep = ({feedbackType, onFeedbackRestart, onFeedback
 
         setIsSendingFeedback(false);
 
-        console.log(feedbackType, feedbackTypeInfo)
         onFeedbacksend();
     }
 

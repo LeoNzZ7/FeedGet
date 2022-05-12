@@ -1,7 +1,7 @@
 # Projeto FeedGet
 
 # Sobre o projeto
-Desenvolvido na semana do NWL return da RocketSeat, o FeedGet é um widget que posibilita o envio de feedbacks, com a posibilidade de fazer capturas de tela e enviar
+Desenvolvido na semana do NWL return da Rocketseat, o FeedGet é um widget que posibilita o envio de feedbacks, com a posibilidade de fazer capturas de tela e enviar
 junto ao set feeback
 
 # Layout do projeto
@@ -17,7 +17,7 @@ junto ao set feeback
 ### ✔ Tailwind CSS
 ### ✔ Vitejs
 
-# BackEnd 
+# Back-end 
 - https://github.com/LeoNzZ7/FeedGetBackEnd
 # Autor
 ## Leonardo Nunes Martinha 

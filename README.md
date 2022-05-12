@@ -9,12 +9,16 @@ junto ao set feeback
 
 # Projeto na prática
 
+![feedgetgif.gif](https://github.com/LeoNzZ7/FeedGet/blob/master/feedgetgif.gif)
+
 # 🚀 Tecnologias utilizadas
 ### ✔ Typescript
 ### ✔ ReactJs
 ### ✔ Tailwind CSS
 ### ✔ Vitejs
 
+# BackEnd 
+- https://github.com/LeoNzZ7/FeedGetBackEnd
 # Autor
 ## Leonardo Nunes Martinha 
 - https://www.linkedin.com/in/leonardo-nunes-martinha-68052522b/

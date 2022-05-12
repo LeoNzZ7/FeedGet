@@ -16,6 +16,7 @@ junto ao set feeback
 ### ✔ ReactJs
 ### ✔ Tailwind CSS
 ### ✔ Vitejs
+### ✔ Axios 
 
 # Back-end 
 - https://github.com/LeoNzZ7/FeedGetBackEnd
